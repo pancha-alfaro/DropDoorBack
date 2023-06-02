@@ -15,6 +15,7 @@ const productsRoutes = require("./routes/productsRoutes");
 
 //Se agrega middleware para habilitar el análisis y conversion de data JSON en requests.
 app.use(express.json());
+//Se agrega middleware para habilitar acceso controlado a recursos de distintos dominios o puertos. 
 app.use(cors());
 
 //ruta para acceso a la información de la base de datos
